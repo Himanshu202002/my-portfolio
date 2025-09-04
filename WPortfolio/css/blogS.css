@@ -1,0 +1,110 @@
+/* Base Reset & Typographic Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Container for centering content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Skip Link Accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background: #007acc;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 999;
+  text-decoration: none;
+}
+
+/* Article Card Styling */
+article {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Headings & Content */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Footer Meta Info */
+article footer {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+footer[role="contentinfo"] {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+footer[role="contentinfo"] nav ul {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+footer[role="contentinfo"] nav ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+footer[role="contentinfo"] nav ul li a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+footer[role="contentinfo"] nav ul li a:hover {
+  text-decoration: underline;
+}
